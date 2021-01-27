@@ -1,18 +1,18 @@
 {% set name = "ansimarkup" %}
-{% set version = "1.4.0" %}
+{% set version = "1.5.0" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 174d920481416cec8d5a707af542d6fba25a1df1c21d8996479c32ba453649a4
+  sha256: 96c65d75bbed07d3dcbda8dbede8c2252c984f90d0ca07434b88a6bbf345fad3
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
+  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
 
 requirements:
   host:
