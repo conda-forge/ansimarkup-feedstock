@@ -1,5 +1,5 @@
 {% set name = "ansimarkup" %}
-{% set version = "1.5.0" %}
+{% set version = "2.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 96c65d75bbed07d3dcbda8dbede8c2252c984f90d0ca07434b88a6bbf345fad3
+  sha256: ffd040e822e6d329d42d250179bd3d9a9c9f6ed6936a30d17b5f7d56a8f03ef0
 
 build:
   number: 0
