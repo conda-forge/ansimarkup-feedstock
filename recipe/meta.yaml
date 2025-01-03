@@ -33,7 +33,7 @@ about:
   home: https://github.com/gvalkov/python-ansimarkup
   license: BSD-3-Clause
   license_family: BSD
-  license_file: LICENSE
+  license_file: LICENSE.txt
   summary: Produce colored terminal text with an xml-like markup
 
 extra:
